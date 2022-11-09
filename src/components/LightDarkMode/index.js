@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class LightDarkMode extends Component {
-  state = {isDarkMode: false}
+  state = {isDarkMode: true}
 
   onChange = () => {
     this.setState(prevState => ({
@@ -14,7 +14,7 @@ class LightDarkMode extends Component {
   render() {
     const {isDarkMode} = this.state
     const modelClassName = isDarkMode ? 'dark-mode' : 'light-mode'
-    const text = isDarkMode ? 'Light Mode' : 'Dark mode'
+    const text = isDarkMode ? 'Light Mode' : 'Dark Mode'
 
     return (
       <div className="bg-container">
